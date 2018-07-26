@@ -538,16 +538,20 @@ body{
   }
   .adress-section{
     grid-area:a;
+    p{
+      line-height: 1.6;
+    }
   }
   .contact-section{
     grid-area: c;
     p{
+      line-height: 1.6;
       a{
         color: $colWhite;
         transition: 1s;
-        // &:hover{
-        //   color: $colWhite;
-        // }
+        &:hover{
+          color: $colYellowFull;
+        }
       }
     }
     .social-contact{
@@ -757,6 +761,8 @@ form{
 .blurMe{
   filter:  blur(5px);
   -webkit-filter:blur(5px);
+  // position: relative;
+  // z-index: -1;
 }
 .dispno{
   display:none;
@@ -795,6 +801,7 @@ form{
   }
   p{
     flex-shrink: 2;
+
     a{
       color: $colYellow;
       &:hover{

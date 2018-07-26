@@ -622,6 +622,27 @@ template {
   .c-main .c-details {
     text-align: center; } }
 
+.privacy-policy h1,
+.privacy-policy h2,
+.privacy-policy h3 {
+  color: #0054A6; }
+
+.privacy-policy a {
+  color: #0816ff;
+  font-weight: bold;
+  transition: 1s; }
+  .privacy-policy a:hover {
+    color: #000; }
+
+.privacy-policy ol li {
+  font-size: 1.5em;
+  color: #0054A6; }
+  .privacy-policy ol li h2 {
+    font-size: 1em; }
+  .privacy-policy ol li p {
+    font-size: .68em;
+    color: #000; }
+
 body {
   position: relative;
   background-color: #fff;
@@ -980,11 +1001,17 @@ body {
             background-color: #fff; }
         body .wrapper .footer-section .wp2 .adress-section {
           grid-area: a; }
+          body .wrapper .footer-section .wp2 .adress-section p {
+            line-height: 1.6; }
         body .wrapper .footer-section .wp2 .contact-section {
           grid-area: c; }
-          body .wrapper .footer-section .wp2 .contact-section p a {
-            color: #fff;
-            transition: 1s; }
+          body .wrapper .footer-section .wp2 .contact-section p {
+            line-height: 1.6; }
+            body .wrapper .footer-section .wp2 .contact-section p a {
+              color: #fff;
+              transition: 1s; }
+              body .wrapper .footer-section .wp2 .contact-section p a:hover {
+                color: #FFFC00; }
           body .wrapper .footer-section .wp2 .contact-section .social-contact {
             display: flex;
             justify-content: space-around;

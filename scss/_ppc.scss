@@ -1,0 +1,37 @@
+$colBlueStr:#0054A6;
+$colYellow:#fff200;
+$colStrongBlue:#0816ff;
+$colBlack:#000;
+
+.privacy-policy{
+
+  h1,
+  h2,
+  h3
+   {
+    color: $colBlueStr;
+  }
+  a{
+    color: $colStrongBlue;
+    font-weight: bold;
+    transition: 1s;
+    &:hover{
+      color:$colBlack;
+    }
+
+  }
+  ol{
+    li{
+      font-size: 1.5em;
+      color: $colBlueStr;
+
+        h2{
+          font-size: 1em;
+        }
+        p{
+          font-size: .68em;
+          color: #000;
+        }
+    }
+  }
+}

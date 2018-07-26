@@ -249,7 +249,7 @@ $(function() { //begin
     // call gogle map when accesing contact page
 
   };
-  $('#responsive-nav a,.getbutt a,.s-solar-electric a').on('click', function(e) {
+  $('#responsive-nav a,.getbutt a,.s-solar-electric a,#c-p,#p-p').on('click', function(e) {
     e.preventDefault();
     var href = this.href;
     var $this = $(this);
