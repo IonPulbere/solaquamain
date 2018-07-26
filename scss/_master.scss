@@ -752,6 +752,8 @@ form{
     }
   }
 } //wraper end
+
+// +++++++++++++++++++++++++++++++++++cookie form
 .blurMe{
   filter:  blur(5px);
   -webkit-filter:blur(5px);
@@ -762,17 +764,24 @@ form{
 .dispme{
   display: block !important;
 }
+
+//
+
+
 // cookie form
 .cookie-main-wrap{
   // display:none;
 
   position: absolute;
-  top:0;
+  top:-10em;
   width: 100%;
   // left: 0;
   background-color: #323232;
   color: #fff;
   padding: 1em;
+  animation: cookieshow  1s linear forwards;
+
+
 .cookie-class{
   max-width: 90rem;
   margin: 0 auto;
@@ -837,7 +846,14 @@ form{
 
 }
 }
+@keyframes cookieshow {
+      0% {top:-10em;}
+      25% {top:-8em;}
+      50% {top:-5em;}
+      75% {top:-2.5em;}
+      100% {top:0;}
 
+}
 } // body end;
 
 

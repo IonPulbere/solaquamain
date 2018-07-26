@@ -306,6 +306,10 @@ template {
 [hidden] {
   display: none; }
 
+.main-section .a-mission a,
+.main-section .a-supliers a {
+  color: #0054A6; }
+
 .main-section .a-mission .a-m-content,
 .main-section .a-supliers .a-m-content {
   display: flex;
@@ -1139,11 +1143,12 @@ body {
     display: block !important; }
   body .cookie-main-wrap {
     position: absolute;
-    top: 0;
+    top: -10em;
     width: 100%;
     background-color: #323232;
     color: #fff;
-    padding: 1em; }
+    padding: 1em;
+    animation: cookieshow  1s linear forwards; }
     body .cookie-main-wrap .cookie-class {
       max-width: 90rem;
       margin: 0 auto;
@@ -1179,6 +1184,18 @@ body {
           text-decoration: underline; }
         body .cookie-main-wrap .cookie-class .cookie-links .decline:hover {
           text-decoration: line-through; }
+
+@keyframes cookieshow {
+  0% {
+    top: -10em; }
+  25% {
+    top: -8em; }
+  50% {
+    top: -5em; }
+  75% {
+    top: -2.5em; }
+  100% {
+    top: 0; } }
 
 @media only screen and (max-width: 1540px) {
   .slide-section .slideshow-container .actionButt {
