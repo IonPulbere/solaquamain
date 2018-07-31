@@ -317,8 +317,6 @@ template {
   align-items: flex-start; }
   .main-section .a-mission .a-m-content img,
   .main-section .a-supliers .a-m-content img {
-    width: 100%;
-    flex: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .main-section .a-mission .a-m-content .a-m-c-text,
   .main-section .a-supliers .a-m-content .a-m-c-text {
@@ -336,8 +334,6 @@ template {
     align-items: flex-start;
     margin-bottom: 1em; }
     .main-section .a-what-we .a-list .a-list-item img {
-      width: 100%;
-      flex: 0;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .main-section .a-what-we .a-list .a-list-item .a-text-area {
       margin: 0;
@@ -379,8 +375,7 @@ template {
       align-items: flex-start;
       margin-bottom: 1em; }
       .main-section .s-solar-electric .a-list .a-list-item img {
-        width: 100%;
-        flex: 0; }
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
       .main-section .s-solar-electric .a-list .a-list-item .a-text-area {
         margin: 0;
         padding: 0 1em;
@@ -654,6 +649,10 @@ body {
   body a {
     color: #fff;
     text-decoration: none; }
+  body p,
+  body ul {
+    font-size: 1em;
+    line-height: 1.6; }
   body .wp2 {
     max-width: 95rem;
     width: 90%;
@@ -666,22 +665,25 @@ body {
       border: 3px solid;
       background-color: #564646; }
     body .wrapper .top-section {
-      background-color: #0054A6;
+      background-color: #323232;
       border-bottom: 2px solid #fff; }
       body .wrapper .top-section .wp2 {
         grid-area: top_s;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1em 1.6em;
-        background-color: #0054A6; }
+        padding: .5em 1.6em;
+        background-color: #323232; }
         body .wrapper .top-section .wp2 .social {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 5px; }
         body .wrapper .top-section .wp2 .call a {
           color: #fff200;
-          transition: .5s; }
+          transition: .5s;
+          font-weight: bold;
+          font-size: 1em;
+          letter-spacing: .1em; }
           body .wrapper .top-section .wp2 .call a:hover {
             color: #fff; }
         body .wrapper .top-section .wp2 .getbutt a {

@@ -5,6 +5,8 @@ $colYellowFull:#FFFC00;
 $colBlueFull:#0816FF;
 $colWhite:#fff;
 $colorbgPN:#f5f2f2;
+$boxshadow:0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+
 .main-section {
   //++++++++++++++++++++++++++++++++++s-solar-electric
   .s-solar-electric{
@@ -23,8 +25,10 @@ $colorbgPN:#f5f2f2;
         margin-bottom: 1em;
 
         img {
-          width: 100%;
-          flex: 0;
+          box-shadow: $boxshadow;
+          // width: 100%;
+          // flex: 0;
+          // box-shadow: $boxShadow;
         }
 
         .a-text-area {

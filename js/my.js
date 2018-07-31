@@ -45,7 +45,7 @@ $(function() { //begin
     var user= getCookie("username");
     var location= getCookie("location");
     if (user!="" && location!="") {
-      console.log('cookies exist');
+      // console.log('cookies exist');
       var me= document.getElementById("cookie-main-wrap");
       if (me) {
         me.className="dispno";
@@ -53,7 +53,7 @@ $(function() { //begin
 
 
     }else{
-      console.log("we need do create Cookies");
+      // console.log("we need do create Cookies");
       var elem= document.getElementById("wrap-id");
       if (elem) {
         elem.className+=" blurMe";
@@ -74,7 +74,7 @@ $(function() { //begin
     e.preventDefault();
     createCookie("username","Ion",1); //create cookie 2
     createCookie("location","CORK",10); //create cookie 2
-    console.log("cookies created");
+    // console.log("cookies created");
     var wrEl= document.getElementById("wrap-id");
     var me= document.getElementById("cookie-main-wrap");
     me.className="dispno";
@@ -243,18 +243,34 @@ $(function() { //begin
   function loadContent(url) {
     $('#main').load(url + ' #contMain' , function() {
       if (url.includes("contact.html")) {
+        // console.log(url);
         $("body").trigger("contactLoaded");
+      }
+      if (url.includes("solarhotwater.html")||url.includes("solarelectricity.html")) {
+        // console.log($('.s-solar-electric a'));
+        $('.s-solar-electric a').on('click', function(e) {
+          e.preventDefault();
+          var href = this.href;
+          var $this = $(this);
+          loadContent(href);
+          history.pushState('', $this.text, href);
+
+        });
       }
     }).hide().fadeIn('slow');
     // call gogle map when accesing contact page
 
   };
+
   $('#responsive-nav a,.getbutt a,.s-solar-electric a,#c-p,#p-p').on('click', function(e) {
     e.preventDefault();
     var href = this.href;
     var $this = $(this);
     loadContent(href);
     history.pushState('', $this.text, href);
+    // console.log($this.text);
+    var d=document.querySelector("title");
+    console.log(d.valueOf());
   });
 
 
@@ -328,7 +344,7 @@ $(function() { //begin
           }, function(data) {
             if (data.includes("true")) {
               ajax.SetText("Sent !");
-              butSend.style.backgroundColor = "#0054A6";
+              butSend.style.backgroundColor = "#00a62a";
               butSend.style.color = "#fff";
               $(".form-footer input[name=name]").val("");
               $(".form-footer input[name=email]").val("");
@@ -457,7 +473,7 @@ butSendContact.addEventListener('click', function(e) {
         }, function(data) {
           if (data.includes("true")) {
             ajax.SetText("Sent !");
-            butSendContact.style.backgroundColor = "#0054A6";
+            butSendContact.style.backgroundColor = "#00a62a";
             butSendContact.style.color = "#fff";
 
             $(".cont-form  input[name=name]").val("");

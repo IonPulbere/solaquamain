@@ -1,5 +1,6 @@
 
 $colYellow:#fff200;
+$coltopbar:#323232;
 $colBlueStr:#0054A6;
 $colYellowFull:#FFFC00;
 $colBlueFull:#0816FF;
@@ -24,6 +25,11 @@ body{
     color: $colWhite;
     text-decoration: none;
   }
+  p,
+  ul{
+    font-size: 1em;
+    line-height:1.6;
+  }
 .wp2{
   max-width: 95rem;
   width: 90%;
@@ -45,7 +51,7 @@ body{
    }
    //+++++++++++++++++++++++++++++++++++++++++++++
   .top-section{
-    background-color: $colBlueStr;
+    background-color: $coltopbar;
     border-bottom: 2px solid $colWhite;
 
     .wp2{
@@ -53,8 +59,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:$paddingMainSection;
-    background-color: $colBlueStr;
+    padding:.5em 1.6em;
+    //$paddingMainSection;
+    background-color: $coltopbar;
     .social{
       display: grid;
       grid-template-columns:1fr 1fr 1fr ;
@@ -69,6 +76,10 @@ body{
       a{
         color:$colYellow;
         transition: .5s;
+        font-weight: bold;
+        font-size: 1em;
+        letter-spacing: .1em;
+        // text-transform: uppercase;
         &:hover{
           color: $colWhite;
         }
