@@ -672,7 +672,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: .5em 1.6em;
+        padding: .7em 1.6em;
         background-color: #323232; }
         body .wrapper .top-section .wp2 .social {
           display: grid;
@@ -1125,6 +1125,16 @@ body {
         font-size: 1.2em; }
         body .wrapper .bottom-section h3 i {
           font-style: normal; }
+      body .wrapper .bottom-section .link-p-c a {
+        color: #0054A6; }
+        body .wrapper .bottom-section .link-p-c a:hover {
+          color: red; }
+      body .wrapper .bottom-section p {
+        margin-top: .2em; }
+        body .wrapper .bottom-section p a {
+          color: #0054A6; }
+          body .wrapper .bottom-section p a:hover {
+            color: red; }
 
 @keyframes fade {
   from {

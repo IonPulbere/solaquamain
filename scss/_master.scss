@@ -59,7 +59,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:.5em 1.6em;
+    padding:.7em 1.6em;
     //$paddingMainSection;
     background-color: $coltopbar;
     .social{
@@ -700,7 +700,29 @@ form{
     font-size: 1.2em;
     i{
       font-style:  normal;
+    }
   }
+  .link-p-c{
+    // border: 1px solid black;
+    a{
+      color: $colBlueStr;
+      &:hover{
+        color: red;
+      }
+    }
+
+  }
+  p{
+    // border: 1px solid black;
+    margin-top: .2em;
+
+    a{
+      color: $colBlueStr;
+      &:hover{
+        color: red;
+      }
+    }
+
   }
 }
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++bottom section end
