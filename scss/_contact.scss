@@ -58,18 +58,32 @@ $borderHelp:1px solid $colBlueFull;
       position: relative ;
       input[type='text']{
         grid-area: n;
+        &:focus{
+          outline: none;
+        }
+
       }
       input[type='tel']{
         grid-area:t;
+        &:focus{
+          outline: none;
+        }
       }
       input[type='email']{
         grid-area:e;
+        &:focus{
+          outline: none;
+        }
       }
       textarea{
         grid-area:m;
+        &:focus{
+          outline: none;
+        }
       }
       button{
         grid-area:s;
+        outline: none;
       }
       .f-item{
         width: 100%;

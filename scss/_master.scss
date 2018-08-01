@@ -583,6 +583,9 @@ body{
       &::placeholder{
         color: $colBlueStr;
       }
+      &:focus{
+        outline: none;
+      }
     }
      button{
        cursor: pointer;

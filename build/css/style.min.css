@@ -528,14 +528,23 @@ template {
       position: relative; }
       .c-main .cc-form form input[type='text'] {
         grid-area: n; }
+        .c-main .cc-form form input[type='text']:focus {
+          outline: none; }
       .c-main .cc-form form input[type='tel'] {
         grid-area: t; }
+        .c-main .cc-form form input[type='tel']:focus {
+          outline: none; }
       .c-main .cc-form form input[type='email'] {
         grid-area: e; }
+        .c-main .cc-form form input[type='email']:focus {
+          outline: none; }
       .c-main .cc-form form textarea {
         grid-area: m; }
+        .c-main .cc-form form textarea:focus {
+          outline: none; }
       .c-main .cc-form form button {
-        grid-area: s; }
+        grid-area: s;
+        outline: none; }
       .c-main .cc-form form .f-item {
         width: 100%;
         line-height: 2;
@@ -1029,6 +1038,8 @@ body {
               color: #0054A6; }
               body .wrapper .footer-section .wp2 .subscribe-section form input::placeholder {
                 color: #0054A6; }
+              body .wrapper .footer-section .wp2 .subscribe-section form input:focus {
+                outline: none; }
             body .wrapper .footer-section .wp2 .subscribe-section form button {
               cursor: pointer;
               outline: none;
