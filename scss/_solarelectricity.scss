@@ -98,7 +98,7 @@ $boxshadow:0 4px 8px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
       .a-list {
         .a-list-item {
           flex-direction: column;
-
+          align-items: center;
           .a-text-area {
             padding: 0;
             order: -1;
