@@ -306,6 +306,17 @@ template {
 [hidden] {
   display: none; }
 
+.error-test {
+  background-color: #0a0001; }
+  .error-test .errorbox {
+    text-shadow: -1px 1px 20px #a4ab4a; }
+  .error-test .error-404-main {
+    text-align: center; }
+
+@media only screen and (max-width: 480px) {
+  .error-404-main img {
+    width: 100%; } }
+
 .main-section .a-mission a,
 .main-section .a-supliers a {
   color: #0054A6; }
